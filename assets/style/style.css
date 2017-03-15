@@ -46,11 +46,16 @@ margin-top: 130px;
 
 #OmOss{
 height:400px;
+background: #3b3b40;
+padding-top: 50px;
 }
 
 #OmOss h2{
 color:#ffc426;
 text-align: center;
+font-family: 'Alegreya SC';
+background-color: rgba(0,0,0,0.6);
+margin-bottom: 0;
 }
 
 #omOssInfo{
@@ -59,8 +64,9 @@ text-align: center;
  	align-content: center;
  	width: 90%;
  	margin-left: 10%;
-font-family: 'Alegreya SC';
-font-size: 120%; 
+	font-family: 'Alegreya';
+	font-size: 120%; 
+	padding-top: 10px;
  }
 
 #carousel-example-generic{
@@ -72,6 +78,34 @@ height:300px;
 display:block;
 width:100%;
 text-align: center;
+}
+
+.imgText {
+	color: white;
+	position: absolute;
+	font-size: 30px;
+	font-family: 'Alegreya SC';
+	background-color: rgba(0,0,0,0.6);
+
+	margin-top: 50px;
+	float: left;
+	width: 70%;
+	left: 19.6%;
+	border-radius: 0px 30px 30px 0px;
+}
+
+em {
+	color: #5997f9;
+	font-style: normal;
+}
+
+a:link {
+	color: #5997f9;
+	font-style: normal;
+}
+
+a:visited {
+	color: #ffc426;
 }
 
 .item img{
