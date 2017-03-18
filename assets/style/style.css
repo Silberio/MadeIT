@@ -40,32 +40,86 @@ width:100%;
 
 #home{
 height: 600px;
-background: grey;
-margin-top: 130px;
+background: white;
+margin-top: 175px;
 }
 
 #OmOss{
 height:400px;
+margin-top: 110px;
+}
+
+#Om-oss p{
+font-family: 'Dosis', sans-serif;
+}
+
+p{
+font-family: 'Dosis', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h5{
+font-family: 'Merriweather', serif;
 }
 
 #OmOss h2{
 color:#ffc426;
 text-align: center;
+background-color: #0072bc;
 }
 
 #omOssInfo{
- 	text-align: center;
- 	color:#ffc426;
- 	align-content: center;
- 	width: 90%;
- 	margin-left: 10%;
-font-family: 'Alegreya SC';
-font-size: 120%; 
- }
+text-align: center;
+align-content: center;
+margin-left: 10%;
+color:#ffc426;
+background-color: rgba(0, 114, 188, 0.8);
+width: 90%;
+font-size: 1.2em;
+font-family: 'Dosis';
+}
+
+.quote{
+text-align: center;
+color:  #0072bc;
+font-family: "Century Gothic";
+font-style: italic;
+font-size: 1.5em;
+font-weight: 600;
+background-color: rgba(0, 114, 188, 0.2);
+margin: 0; 
+}
 
 #carousel-example-generic{
 width:100%;
 height:300px;
+}
+
+.imgText {
+	color: white;
+	position: absolute;
+	font-size: 30px;
+	font-family: 'Alegreya SC';
+	background-color: rgba(0,0,0,0.6);
+
+	margin-top: 50px;
+	float: left;
+	width: 70%;
+	left: 19.6%;
+	border-radius: 0px 30px 30px 0px;
+}
+
+em {
+	color: #0072bc;
+	font-style: normal;
+}
+
+a:link {
+	color: #5997f9;
+	font-style: normal;
+}
+
+a:visited {
+	color: #ffc426;
 }
 
 .item{
@@ -74,15 +128,20 @@ width:100%;
 text-align: center;
 }
 
+
 .item img{
-margin-left: 320px;
-}
+margin-left: 5%;
+width: 90%;
+size: 1135, 425
+ }
 
 #service{
 background: #e1e1e1;
 
 }
+
 #service h2{
+font-family: 'Merriweather', serif;
 color:#0072bc;
 text-align: center;
 padding:50px 0px
@@ -103,6 +162,14 @@ background: #2e2e2e;
 height:300px;
 }
 
+h2.partners {
+    font-family: 'Merriweather', serif;
+    width: 100%;
+    text-align: center;
+    padding: 50px 0px;
+    color: #bebebe;
+}
+
 .part{
 text-align: center;
 color:#5f5f5f;
@@ -110,11 +177,67 @@ color:#5f5f5f;
 
 #form{
 background: #c7c7c7;
+height: 460px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input#nameInput, input#emailInput, input#subjectInput, textarea.form-control{
+width:50%;
+}
+
+#menu{
+width: 40px;
+display: none;
+}
+
+#formH2{
+    width:100%;
+    font-family: 'Merriweather', serif;
+    padding:50px 0px;
+    text-align: center;
+}
+
+button.btn.btn-default {
+    float: right;
+    margin-right: 25%;
 }
 
 #footer{
 height:200px;
 background: #013b60;
+}
+
+.footerContent{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.footerIcon{
+padding: 0px 10px;
+color: orange;
+}
+
+.footerSocial{
+width:100%;
+height:40px;
+background: #2e2e2e;
+}
+
+.social{
+color:orange;
+padding:10px 15px;
+font-size: 20px;
+float:right;
 }
 
 #menu{
@@ -143,6 +266,3 @@ top: 50px;
 cursor: pointer;
 }
     
-#home{
-margin-top: 175px;
-}
