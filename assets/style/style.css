@@ -9,27 +9,49 @@ background: transparent;
 
 #main-nav{
 background: #0072bc;
-height:80px;
+height:100px;
 margin:0px;
 border-radius: 0px;
 border:none;
 }
 
 #navContainer, #navHeader, #header-nav, .liNav{
-height:80px;
-margin-top: 5px;
+height:100px;
+margin-top: 8px;
 }
 
 #socialHeader {
-    width: 150px;
+    width: 200px;
     float: left;
-    padding: 5px 0px;
+    padding: 5px 5px
 }
 
 #loginNav{
-margin-top:80px;
-background-color: #c7c7c7;
-border-color: #c7c7c7;
+margin-top:100px;
+}
+
+li{
+list-style: none;
+}
+
+#login, #SignUp {
+    position: absolute;
+    z-index: 999;
+    right: 0px;
+    top: 152px;
+    background: #f8f8f8;
+    padding: 20px;
+    display:none;
+}
+
+
+img.main-logo {
+    width: 250px;
+    margin-top: -32px;
+}
+
+img.footer-logo {
+    width: 375px;
 }
 
 #loginUl{
@@ -189,7 +211,7 @@ background-size: cover;
 }
 
 p.serviceP {
-    color: #2e2e2e;
+    color: black;
     font-size: 18px;
 }
 
@@ -204,6 +226,7 @@ background: rgb(0, 114, 188);
 #partners{
 background: #2e2e2e;
 min-height: 380px;
+margin-top: -20px;
 }
 
 h2.partners {
@@ -251,6 +274,7 @@ display: none;
 
 #form{
 height: 460px;
+margin-top: -20px;
 }
 
 button.btn.btn-default {
@@ -298,6 +322,14 @@ font-size: 20px;
 float:right;
 }
 
+.video {
+    margin-top: 155px;
+}
+
+.innerKurser {
+    margin-top: 185px;
+}
+
 @media screen and (max-width: 770px){
 #navContainer, #navHeader, #header-nav, .liNav {
 height: auto;
@@ -306,8 +338,7 @@ height: auto;
 #socialHeader{
 display:none;
 }
-
-
+    
 #header-nav {
 margin-top: 80px;
 background: #b8b8b8;
@@ -339,4 +370,8 @@ width:80%;
 .serviceInfo {
     width: 94%;
 }
+    
+#login, #SignUp {
+left: 0px;
+top: 197px;
 }
