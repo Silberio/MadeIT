@@ -1,11 +1,334 @@
 <!DOCTYPE html>
-<html>
+<html lang="sv">
 <head>
-	<title>Redirecting</title>
-	<meta http-equiv="refres" content="0; url=assets/pages/index.html"/>
+<title>Made-IT</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="assets/style/style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
+<link href="https://fonts.googleapis.com/css?family=Dosis|Merriweather" rel="stylesheet"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+    
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-<p>You're being redirected. Please wait...</p>
-<p>If you're not being redirected automatically, click <a href="assets/pages/index.html">here</a>.</p>
+    
+<!-- Navigation bar -->
+<nav class="navbar navbar-default navbar-fixed-top" id="main-nav">
+  <div class="container-fluid" id="navContainer">
+    <div class="navbar-header" id="navHeader">
+      <a class="navbar-brand" href="#">
+      <img class="main-logo" src="assets/resources/MadeIT-Logo-thin.png">  
+      </a>
+    </div>
+    <ul class="nav navbar-nav navbar-right" id="header-nav">
+      <li class="liNav"><a href="#">Hem</a></li>
+      <li class="liNav"><a href="#OmOss">Om oss</a></li>
+      <li class="liNav"><a href="#Service">Service</a></li>
+      <li class="liNav"><a href="#footer">Kontakt</a></li>
+    
+    </ul>
+  </div>
+</nav>
+<!-- END Navigation bar -->
+
+    <nav class="navbar navbar-default navbar-fixed-top" id="loginNav">
+        <div id="socialHeader">
+    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </div>
+     <ul class="nav navbar-nav navbar-right" id="loginUl">
+      <li class="loginLi" id="SingIn"><a href="#"><span class="glyphicon glyphicon-user"></span> Bli kund</a></li>
+      <li class="loginLi" id="LoggaIn"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Logga in</a></li>       
+    </ul> 
+    <img id="menu" alt="menuIcon" src="../resources/menu-icon.png">
+    </nav>
+    
+    <div id="login">
+    <form>
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputPassword3">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Lösenord">
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Kom ihåg mig
+    </label>
+  </div>
+  <button type="submit" class="btn btn-default">Logga in</button>
+</form>     
+    </div>
+    
+    <div id="SignUp">
+<form>
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputEmail3">Name</label>
+    <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Namn">
+  </div>
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputPassword3">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Lösenord">
+  </div>
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputPassword3">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Upprepa lösenord">
+  </div>
+  <button type="submit" class="btn btn-default">Bli kund</button>
+</form>         
+</div>
+    
+<!-- Home article -->
+<div id="home">
+
+<!-- Slider -->   
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+
+  </ol>
+
+  <!-- Wrapper for slides -->
+<div id="sliderWrapper">
+  <div class="carousel-inner" role="listbox" id="innerSlider">
+    <div class="item active">
+      <span class="imgText">
+      <h3 class="title">Välkommen till<em>MadeIt</em>!</h3>
+      <p class="titlep">Det <em><a href="#OmOss">ledande</a></em> företaget</p>
+      </span>
+      <img src="../resources/slide_1.png" alt="img1">
+    </div>
+      
+    <div class="item">
+      <span class="imgText">
+      <h3 class="title">Mångårig erfarenhet</h3>
+      <p class="titlep"> Rådgör med våra extremt kompetenta, <em>icke-korrupta</em> rådgivare!</p>
+      </span>
+      <img src="../resources/slide_2.png" alt="img2">
+    </div>
+
+    <div class="item">
+    <span class="imgText">
+      <h3 class="title">Internationell nivå</h3>
+      <p class="titlep">Nöjda kunder över hela världen!</p>
+    </span>
+      <img src="../resources/slide_3.png" alt="img3">
+    </div>
+
+    <div class="item">
+    <span class="imgText">
+      <h3 class="title">Har du frågor? </h3>
+      <p class="titlep">Klicka <a href="#form">här</a> för att kontakta oss</p>
+    </span>
+      <img src="../resources/slide_4.png" alt="img4">
+    </div>
+  </div>
+    </div>
+
+  <!-- Left and right controls -->
+
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!-- END Slider -->
+
+    </div>
+
+<!-- Om Oss -->
+<div id="OmOss">
+<h2 class="omOssh2">- ABOUT US -</h2>
+<div class="row">
+<div class="col-lg-11 col-md-11 col-xs-12" id="Om-oss">
+  <p id="omOssInfo">Ett dedikerat team av välutbildade entreprenörer med passion för design, åtkomlighet, och pedagogik. Ingen utmaning är för hård för oss.
+
+Stockholmsbaserade, MadeIT startade upp som ett litet projekt med stortänkande visionärer, alla experter inom sina respektive områden, som tillsammans har bildat ett arbete som går jorden runt till olika företag och myndigheter.
+
+MadeIt erbjuder en mängd olika skräddarsydda digitala utbildningsmedium, där du kan välja själv det som passar ditt verksamhet bäst, du kan välja mellan våra webbinarier med lärare i realtid till e-kurser eller streaming. Du väljer vilken nivå du vill ha hjälp på. Vi är ett nytt företag på marknaden och vi är hungriga.
+<br>
+Vi är ett företag som har specaliserat sig på att göra digitala utbildningar. Du väljer vilken nivå du vill ha hjälp på. Vi är ett nytt företag på marknaden och vi är hungriga. </p>
+
+</div>
+</div>  
+</div>
+<!-- END Om Oss -->
+
+<!--  Service -->
+<div id="service">
+<h2>- SERVICE -</h2>
+<div class="row">
+<a href="eKurser.html">
+<div class="col-lg-6 col-md-6 col-xs-12 blue webbinar">
+<div class="serviceInfo">
+<h3 class="service">Webbinarier</h3>
+<p class="serviceP">Våra webbinarier är lärarledda expertföreläsningar som du följer i realtid via webben. Under webbinariet finns möjlighet att ställa frågor och få svar direkt. Webbinarierna spelas också in för att kunna finnas tillgängliga även i efterhand. Webbinarieformatet använder vi bland annat för lunchföreläsningsserier med nyhetsinnehåll.</p>
+</div>
+    </div>
+</a>
+<a href="eKurser.html">
+<div class="col-lg-6 col-md-6 col-xs-12 white eKurser">
+<div class="serviceInfo">
+<h3 class="service">E-kurser</h3>
+<p class="serviceP">Kurser där innehållet förmedlas av såväl lärare som via ljud, text, video och grafik på ett pedagogiskt sätt. Resultatet är ett effektivt upplägg som förstärker ditt lärande och gör kunskapen lättillgänglig. Du väljer själv när, var och i vilken takt du vill gå den. Kurserna avslutas alltid med ett kunskapsprov.</p></div>
+</div>
+    </a>
+    </div>
+    
+<div class="row">
+<a href="eKurser.html">
+<div class="col-lg-6 col-md-6 col-xs-12 white streaming">
+<div class="serviceInfo">
+<h3 class="service">Streaming</h3>
+<p class="serviceP">Streamingkurser är lärarledda föreläsningar eller lektioner som vi gör tillgängliga för en större publik genom streaming via webben.Till skillnad mot ett webbinarium så finns det inte möjlighet till tvåvägskommunikation. I det här formatet kan du exempelvis ta del av våra nyhetsdagar.</p>
+    </div>
+    </div>
+    </a>
+<div class="col-lg-6 col-md-6 col-xs-12 blue">
+
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+            <div class="referens">
+        <h3>Referens</h3>
+        <p>Kommentar här</p>
+        </div>
+      <div class="carousel-caption">
+      </div>
+    </div>
+    <div class="item">
+      <div class="referens">
+        <h3>Referens</h3>
+        <p>Kommentar här</p>
+        </div>
+      <div class="carousel-caption">
+      </div>
+    </div>
+      <div class="item">
+      <div class="referens">
+        <h3>Referens</h3>
+        <p>Kommentar här</p>
+        </div>
+      <div class="carousel-caption">
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+    
+</div>
+</div>
+</div>
+<!-- END service -->
+    
+<!-- Partners -->
+<div id="partners">
+<h2 class="partners">- PARTNERS -</h2>
+<div class="row">
+<div class="col-lg-4 col-md-4 col-xs-12 part"><img alt="partner" src="../resources/argusvision.png"></div>
+<div class="col-lg-4 col-md-4 col-xs-12 part"><img alt="partner" src="../resources/eclipse_1024.png"></div>
+<div class="col-lg-4 col-md-4 col-xs-12 part"><img alt="partner" src="../resources/infin-it.png"></div>
+</div>
+</div>
+<!-- END Partners -->
+    
+<!-- Form -->
+<div id="form">
+    <h2 id="formH2">- ASK US ANYTHING -</h2>
+<form>
+
+  <div class="form-group">
+    <input type="text" class="form-control" id="nameInput" placeholder="Namn">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" id="emailInput" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" id="subjectInput" placeholder="Ärande">
+  </div>
+  <div class="form-group">
+<textarea class="form-control" rows="3" placeholder="Ditt meddelande här..."></textarea>
+    </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+</div>
+<!-- END Form -->
+    
+<!-- Social icons -->
+<div class="footerSocial">
+    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+</div>
+<!--  END social icons -->
+    
+<!-- Footer -->
+<div id="footer"> 
+<div class="row">
+<div class="col-lg-4 col-md-4 col-xs-12 footerContent"><span class="glyphicon glyphicon-send footerIcon"></span> Madeit@info.se</div>
+<div class="col-lg-4 col-md-4 col-xs-12 footerContent"><img class="footer-logo" src="assets/resources/MadeIT-Logo-thin.png"></div>
+<div class="col-lg-4 col-md-4 col-xs-12 footerContent"><span class="glyphicon glyphicon-earphone footerIcon"></span> +46 707654322</div>
+</div>
+</div>
+<!-- END Footer -->
+
+<script type="text/javascript">
+
+ var menu = document.getElementById("menu");
+ var nav = document.getElementById("header-nav");
+ var login = document.getElementById("LoggaIn");
+    
+    $(menu).click(function(){
+    $(nav).toggleClass("show");
+    })
+    
+    $(login).click(function(){
+    $("#login").toggle("slow");
+    })
+    
+        $("#SingIn").click(function(){
+    $("#SignUp").toggle("slow");
+    })
+
+</script>    
 </body>
 </html>
