@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<title>Made-IT e-kurser</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="../style/style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
+<link href="https://fonts.googleapis.com/css?family=Dosis|Merriweather" rel="stylesheet"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">      
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    
+<!-- Navigation bar -->
+<nav class="navbar navbar-default navbar-fixed-top" id="main-nav">
+  <div class="container-fluid" id="navContainer">
+    <div class="navbar-header" id="navHeader">
+      <a class="navbar-brand" href="../../index.html">
+              <img class="main-logo" src="../resources/MadeIT-Logo-thin.png">  
+        </a>
+    </div>
+    <ul class="nav navbar-nav navbar-right" id="header-nav">
+      <li class="liNav"><a href="../../index.html">Hem</a></li>
+      <li class="liNav"><a href="#OmOss">Om oss</a></li>
+      <li class="liNav"><a href="#Service">Service</a></li>
+      <li class="liNav"><a href="#footer">Kontakt</a></li>
+    
+    </ul>
+  </div>
+</nav>
+<!-- END Navigation bar -->
+
+    <nav class="navbar navbar-default navbar-fixed-top" id="loginNav">
+        <div id="socialHeader">
+    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </div>
+     <ul class="nav navbar-nav navbar-right" id="loginUl">
+      <li class="loginLi" id="SingIn"><a href="#"><span class="glyphicon glyphicon-user"></span> Bli kund</a></li>
+      <li class="loginLi" id="LoggaIn"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Logga in</a></li>
+    </ul> 
+    <img id="menu" alt="menuIcon" src="../resources/menu-icon.png">
+    </nav>
+    
+    <div id="login">
+    <form>
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputPassword3">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Lösenord">
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Kom ihåg mig
+    </label>
+  </div>
+  <button type="submit" class="btn btn-default">Logga in</button>
+</form>     
+    </div>
+    
+<div id="SignUp">
+<form>
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputEmail3">Name</label>
+    <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Namn">
+  </div>
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputPassword3">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Lösenord">
+  </div>
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputPassword3">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Upprepa lösenord">
+  </div>
+  <button type="submit" class="btn btn-default">Bli medlem</button>
+</form>         
+</div>
+
+
+<div id="videoContent">   
+<div class="row">
+<div class="col-lg-6 col-md-6 col-xs-12 video">
+<iframe width="600" height="400" src="https://www.youtube.com/embed/ICVUZuhKZGI" frameborder="0" allowfullscreen></iframe>
+</div>
+<div class="col-lg-6 col-md-6 col-xs-12 kurser">
+<ul class ="innerKurser">
+<h3 class="varaKurser">Våra kurser</h3>
+<li class="lursLi"><p>Frontend</p></li>
+<li class="lursLi"><p>Backend</p></li>
+<li class="lursLi"><p>Scripting</p></li>
+<li class="lursLi"><p>UX design</p></li>
+<li class="lursLi"><p>Programmering</p></li>
+<li class="lursLi"><p>Inbyggda system</p></li>
+</ul>
+    </div>
+    </div>
+</div> 
+<!-- Footer -->
+<div id="footer"> 
+<div class="row">
+<div class="col-lg-4 col-md-4 col-xs-12 footerContent"><span class="glyphicon glyphicon-send footerIcon"></span> Madeit@info.se</div>
+<div class="col-lg-4 col-md-4 col-xs-12 footerContent"><img class="footer-logo" src="../resources/MadeIT-Logo-thin.png"></div>
+<div class="col-lg-4 col-md-4 col-xs-12 footerContent"><span class="glyphicon glyphicon-earphone footerIcon"></span> +46 707654322</div>
+</div>
+</div>
+<!-- END Footer -->
+<script type="text/javascript">
+
+ var menu = document.getElementById("menu");
+ var nav = document.getElementById("header-nav");
+ var login = document.getElementById("LoggaIn");
+    
+    $(menu).click(function(){
+    $(nav).toggleClass("show");
+    })
+    
+    $(login).click(function(){
+    $("#login").toggle("slow");
+    })
+    
+    $("#SingIn").click(function(){
+    $("#SignUp").toggle("slow");
+    })
+
+</script>    
+</body>
+</html>
